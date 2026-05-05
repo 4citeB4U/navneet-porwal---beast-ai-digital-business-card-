@@ -256,6 +256,10 @@ export default function DigitalCard() {
               </button>
             </div>
           </div>
+
+          <div className="mt-8 text-right">
+            <p className="text-[9px] tracking-wide text-slate-300 uppercase">Powered by Leeway Innovations</p>
+          </div>
         </div>
       </motion.div>
     </div>

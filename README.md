@@ -1,22 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Navneet Porwal (Monk) | Beast AI Digital Business Card
 
-# Run and deploy your AI Studio app
+<p align="center">
+  <img src="./public/monk-engine.png" alt="Navneet Porwal (Monk)" width="220" />
+</p>
 
-This contains everything you need to run your app locally.
+This application is a professional digital business card for Navneet Porwal (Monk), designed to represent his leadership profile, consulting authority, mentorship mission, and Beast AI ecosystem.
 
-View your app in AI Studio: https://ai.studio/apps/81b8f493-98e9-41bc-8760-fea709ef7502
+## Profile Summary
 
-## Run Locally
+- Name: Navneet Porwal (Monk)
+- Role: CIO, Founder and CEO
+- Organizations: Beast AI, Pivot2AI
+- Focus: Ethical AI strategy, enterprise transformation, global AI enablement
+- Region: Dallas, Texas (serving global clients)
 
-**Prerequisites:**  Node.js
+## Core Abilities and Skills
 
+- AI strategy and executive advisory for organizations scaling AI adoption
+- AI consulting for solution architecture, transformation planning, and implementation roadmaps
+- AI training and capability development through Beast AI Academy
+- Mentorship for founders, teams, and future AI leaders
+- Innovation leadership across business, technology, and operations
+
+## Mentorship and Leadership Mission
+
+Monk mentors emerging and established leaders to build practical, responsible, and high-impact AI programs. His approach combines executive clarity, technical depth, and a people-first model for sustainable transformation.
+
+## Business Card Features
+
+- Live contact profile with direct communication links
+- QR-based quick connect experience
+- One-click vCard download
+- Beast AI and Academy quick navigation
+- Share-ready digital card for mobile and desktop
+
+## Local Development
+
+Prerequisites: Node.js 20+
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start development server:
    `npm run dev`
+3. Build production output:
+   `npm run build`
 
-# navneet-porwal---beast-ai-digital-business-card-
+## Deployment
+
+This repository is configured for GitHub Pages deployment via GitHub Actions on push to `main`.
+
+## LeeWay Standards Alignment
+
+This application follows a LeeWay-governed structure with local governance configuration under `.leeway/` and production-ready CI deployment under `.github/workflows/`.

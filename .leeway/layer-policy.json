@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "policyName": "leeway-standards-projection-policy",
+  "projectionRule": "This repository is a projection application that consumes standards guidance without re-owning core standards runtime files.",
+  "allowedRepoExecutionRoles": [
+    "projection",
+    "validate"
+  ],
+  "executionPath": [
+    "standards",
+    "projection"
+  ],
+  "layerEdges": {
+    "allowed": [
+      "standards->projection",
+      "projection->standards"
+    ],
+    "forbidden": [
+      "projection->runtime-internals",
+      "projection->standards-runtime-law"
+    ]
+  },
+  "ignoreDirs": [
+    ".git",
+    "node_modules",
+    "dist",
+    "build",
+    "coverage"
+  ],
+  "scanExtensions": [
+    ".ts",
+    ".tsx",
+    ".js",
+    ".jsx",
+    ".json",
+    ".css",
+    ".md"
+  ]
+}

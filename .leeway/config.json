@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "navneet-porwal---beast-ai-digital-business-card",
+    "author": "Leeway Innovations",
+    "license": "MIT"
+  },
+  "rootDir": "src",
+  "compliance": {
+    "minimumScore": 85,
+    "blockOnFail": false
+  },
+  "policies": {
+    "NO_SECRETS_IN_CODE": { "enforced": true },
+    "HEADERS_REQUIRED": { "enforced": false },
+    "TAGS_REQUIRED": { "enforced": false },
+    "NO_CIRCULAR_DEPS": { "enforced": true },
+    "NAMING_CONVENTIONS": { "enforced": true },
+    "PLACEMENT_RULES": { "enforced": true }
+  },
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "coverage/**",
+    "*.min.js"
+  ]
+}
