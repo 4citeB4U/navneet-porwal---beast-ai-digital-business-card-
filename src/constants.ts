@@ -6,12 +6,14 @@ export const NAVNEET_INFO: ContactInfo = {
   nickname: 'Monk',
   title: 'CIO | Founder & CEO',
   organization: 'Beast AI | Pivot2AI',
-  emails: ['ceo@pivot2ai.org', 'navneet.porwal@beastai.ai'],
-  phones: ['+1 (214) 210-1480'],
+  emails: ['ceo@pivot2ai.org'],
+  phones: ['+1 414 213 4642'],
   websites: ['https://www.beastai.ai', 'https://www.pivot2ai.org'],
   address: {
-    city: 'Dallas',
-    state: 'Texas',
+    street: '5096 W Berkshire Dr',
+    city: 'Franklin',
+    state: 'WI',
+    postalCode: '53132',
     country: 'USA'
   },
   note: 'CIO, AI Leader, Strategist | Mentor | Innovator. Building Ethical AI Solutions Together. Beast AI Academy.'

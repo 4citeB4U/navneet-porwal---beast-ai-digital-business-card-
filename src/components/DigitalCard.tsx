@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'motion/react';
 import { 
   Mail, 
@@ -10,8 +9,7 @@ import {
   Share2, 
   ShieldCheck,
   GraduationCap,
-  Users,
-  Lightbulb
+  Users
 } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
 import { NAVNEET_INFO, SOCIAL_LINKS } from '../constants';
@@ -66,20 +64,6 @@ const LogoB = () => (
     <line x1="10" y1="50" x2="20" y2="50" stroke="#7C3AED" strokeWidth="2" strokeDasharray="2,2" />
     <line x1="10" y1="70" x2="20" y2="70" stroke="#84CC16" strokeWidth="2" strokeDasharray="2,2" />
   </svg>
-);
-
-const IconButton = ({ icon: Icon, label, onClick, primary = false }: any) => (
-  <button
-    onClick={onClick}
-    className={`flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium transition-all transform active:scale-95 ${
-      primary 
-        ? 'bg-brand-purple text-white shadow-lg glow-purple hover:bg-brand-purple/90' 
-        : 'bg-white/10 text-white backdrop-blur-sm border border-white/20 hover:bg-white/20'
-    }`}
-  >
-    <Icon size={20} />
-    <span>{label}</span>
-  </button>
 );
 
 export default function DigitalCard() {
@@ -159,11 +143,11 @@ export default function DigitalCard() {
 
         {/* Right Side - Information (Light/Glass) */}
         <div className="w-full md:w-[55%] bg-white p-8 md:p-12">
-          <div className="mb-6">
+          <div className="mb-6 rounded-2xl overflow-hidden border border-brand-purple/20 shadow-xl">
             <img
               src={monkImageSrc}
               alt="Navneet Porwal Monk"
-              className="w-28 h-28 md:w-32 md:h-32 rounded-2xl object-cover shadow-lg border-2 border-brand-purple/20"
+              className="w-full h-44 md:h-56 object-cover"
             />
           </div>
 
@@ -194,12 +178,11 @@ export default function DigitalCard() {
               icon={Mail} 
               label="ceo@pivot2ai.org" 
               link={`mailto:ceo@pivot2ai.org`}
-              subLabel="navneet.porwal@beastai.ai"
             />
             <ContactItem 
               icon={Phone} 
-              label="+1 (214) 210-1480" 
-              link={`tel:+12142101480`}
+              label="+1 414 213 4642" 
+              link={`tel:+14142134642`}
             />
             <ContactItem 
               icon={Globe} 
@@ -209,8 +192,8 @@ export default function DigitalCard() {
             />
             <ContactItem 
               icon={MapPin} 
-              label="Dallas, Texas, USA" 
-              subLabel="Serving Global Clients"
+              label="5096 W Berkshire Dr" 
+              subLabel="Franklin, WI 53132"
             />
           </div>
 

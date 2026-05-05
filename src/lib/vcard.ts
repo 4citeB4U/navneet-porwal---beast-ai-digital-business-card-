@@ -8,8 +8,10 @@ export interface ContactInfo {
   phones: string[];
   websites: string[];
   address?: {
+    street?: string;
     city?: string;
     state?: string;
+    postalCode?: string;
     country?: string;
   };
   note?: string;
@@ -43,8 +45,8 @@ export function generateVCard(info: ContactInfo): string {
   });
 
   if (info.address) {
-    const { city, state, country } = info.address;
-    lines.push(`ADR;TYPE=WORK:;;;${city || ''};${state || ''};;${country || ''}`);
+    const { street, city, state, postalCode, country } = info.address;
+    lines.push(`ADR;TYPE=WORK:;;${street || ''};${city || ''};${state || ''};${postalCode || ''};${country || ''}`);
   }
 
   if (info.note) {
